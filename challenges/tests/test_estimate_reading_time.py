@@ -1,0 +1,8 @@
+from lib.estimate_reading_time import*
+
+def test_reading_time_ippo():
+    assert estimate_reading_time("My name is ippo") == "The estimate reading time for this text is 0.02 minutes."
+
+
+def test_reading_time_labrador():
+    assert estimate_reading_time("The Labrador Retriever was bred to be both a friendly companion and a useful working dog breed. Historically, they earned their keep as fishermens helpers: hauling nets, fetching ropes, and retrieving fish from the chilly North Atlantic. Todays Labrador Retriever is as good-natured and hardworking as their ancestors, and theyre also Americas most popular breed. Modern Labs work as retrievers for hunters, assistance dogs, show competitors, and search and rescue dogs, among other canine jobs. When considering a Lab, we recommend adopting from rescue organizations or shelters to provide a loving home to a dog in need. However, if you decide to buy, its crucial to choose a reputable breeder. Conduct thorough research to ensure that the breeder follows ethical practices and values the well-being of their dogs. Reputable breeders prioritize the health and temperament of their Labrador Retriever puppies, conduct necessary health screenings, and provide a nurturing environment for the puppies. This active approach ensures that you bring home a healthy and happy pup while discouraging unethical breeding practices.") == "The estimate reading time for this text is 0.85 minutes."
